@@ -59,8 +59,18 @@ const record = [
    { year: "1962", result: "N/A"},
    { year: "1961", result: "N/A"},
    { year: "1960", result: "N/A"}
- ]
+ ]  
+ const sadReality = [
+   { result: "N/A" },
+   { result: "N/A" },
+   { result: "N/A" }
+ ];
+ 
 function superbowlWin(record) {
    const win = record.find(entry => entry.result === "W");
    return win ? win.year : undefined;
 }
+
+
+console.log(superbowlWin(record));
+console.log(superbowlWin(sadReality));
